@@ -1,6 +1,6 @@
   # 使用方法：在本脚本上右键点击“使用PowerShell运行”即可
 
-  $ID = Read-Host -Prompt "输入需要修改文件的后缀名"
+  # $ID = Read-Host -Prompt "输入需要修改文件的后缀名"
  
 # use $ID to do something...
 
@@ -12,4 +12,4 @@
   }
 
   # 查询所有的类型文件，并且遍历修改文件的最后修改日期、创建日期、最后访问日期
-  ls .\*.$ID | foreach-object { $_.LastWriteTime = getMyDate; $_.CreationTime = getMyDate; $_.LastAccessTime = getMyDate }
+  ls .\*.doc | foreach-object { $_.LastWriteTime = getMyDate; $_.CreationTime = getMyDate; $_.LastAccessTime = getMyDate }
