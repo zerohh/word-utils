@@ -30,7 +30,7 @@ function getMyDate {
 }
 
 # 接收用户输入的文件类型
-$fileTypes = Read-Host "请输入文件类型后缀,例如:jpeg(多个类型用逗号分隔，例如:jpeg,doc)"
+$fileTypes = Read-Host "Enter file types (separated by commas)"
 
 # 将文件类型转换为数组
 $fileTypesArray = $fileTypes.Split(',')
